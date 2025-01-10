@@ -1,19 +1,16 @@
 import React from '../lib/react.js';
-import Calculator from './calculator';
+import Calculators from './calculators';
+
+const { createElement: h } = React;
 
 function App() {
-  return React.createElement('div', {
-    className: 'app',
-    children: [
-      React.createElement(Calculator),
-      React.createElement(Calculator, {
-        operator: '-',
-      }),
-      React.createElement(Calculator, {
-        elements: [12, 2],
-      }),
-    ],
-  });
+  return h(
+    'div',
+    {
+      className: 'app',
+    },
+    h(Calculators)
+  );
 }
 
 export default App;
