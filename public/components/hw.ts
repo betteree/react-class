@@ -1,5 +1,6 @@
 import React from "../lib/react.js";
 import Chip from "./chip";
+import Profile from "./profile";
 import createElement from "./../lib/own/createElement";
 
 function hw() {
@@ -19,7 +20,8 @@ function hw() {
         },
       },
       "공개 예정"
-    )
+    ),
+    React.createElement(Profile)
   );
 }
 
