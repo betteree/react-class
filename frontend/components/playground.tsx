@@ -1,4 +1,4 @@
-import React from "../lib/react.js";
+import React from '../lib/react.js';
 
 export default function Playground() {
   // 지역 변수 X
@@ -15,7 +15,7 @@ export default function Playground() {
   // 리액트 시그널(signal)을 줘야 컴포넌트를 다시 렌더링 하지!!!
   return (
     <div className="Playground">
-      <h1>플레이그라운드 클릭 state </h1>
+      <h1>플레이그라운드</h1>
       <button
         type="button"
         onClick={() => {
